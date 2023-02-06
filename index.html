@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web-FE</title>
+    <title>Trip Advisor</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <style>
     </style>
@@ -12,14 +12,14 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="display-4 mb-4">이름 입력</h1>
+        <h1 class="display-4 mb-4">희망 여행지 입력</h1>
         <hr>
         <div id="output"></div>
         <form id="submitMessage">
           <div class="form-group">
-            <input type="text" id="name" class="form-control" placeholder="이름을 입력하세요...">
+            <input type="text" id="name" class="form-control" placeholder="가고 싶은 장소를 입력하세요...">
           </div>
-          <input type="submit" class="btn btn-secondary" onclick="submitMessage(event)" value="전송">
+          <input type="submit" class="btn btn-secondary" onclick="submitMessage(event)" value="등록">
         </form>
     </div>
     <script>
@@ -52,7 +52,7 @@
             output =
             `
             <div class="alert alert-success" role="alert">
-                ${text}님! 만나서 반갑습니다!
+                ${text}
             </div>        
             `;
             document.getElementById('output').innerHTML = output;
